@@ -3,7 +3,8 @@ export const style = (css) => css`
        shrink to the icon's natural size instead (see #425). */
     .icon-small {
         width: auto;
-        height: auto;
+        height: var(--mer-icon-height, auto);
+        line-height: var(--mer-icon-line-height, 40px);
     }
     /* ...except when it is showing a picture: state-badge then hides the icon and paints the
        image as a background, so the host has no in-flow content and would collapse to nothing.
